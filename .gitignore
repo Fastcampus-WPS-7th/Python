@@ -7,7 +7,6 @@ secrets.tar
 .media
 node_modules
 bower_components*
-*.ipynb
 
 # CSS files
 static/css/
