@@ -1,11 +1,13 @@
 #import game
 #from game import play_game
-from game import *
+from functions.game import *
 #import shop
-from shop import buy_item
+from functions.shop import buy_item
+from friends.chat import send_message
 
 CHOICE = '''1. Play game
 2. Buy item
+3. Send message
 0. exit'''
 
 if __name__ == '__main__':
@@ -27,6 +29,8 @@ if __name__ == '__main__':
             print(f'msg: {PLAY_MESSAGE}')
         elif choice == '2':
             buy_item()
+        elif choice == '3':
+            send_message()
         elif choice == '0':
             break
         else:
