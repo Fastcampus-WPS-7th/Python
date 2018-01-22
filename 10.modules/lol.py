@@ -1,5 +1,6 @@
 #import game
-from game import play_game
+#from game import play_game
+from game import *
 #import shop
 from shop import buy_item
 
@@ -23,6 +24,7 @@ if __name__ == '__main__':
 
         if choice == '1':
             play_game()
+            print(f'msg: {PLAY_MESSAGE}')
         elif choice == '2':
             buy_item()
         elif choice == '0':
